@@ -10,4 +10,5 @@ Ce projet vise à créer un site web présentant les meilleurs sites touristique
 voici les couleurs utilisees pour le site web : 
 
 ## Wireframes 
-Voici quelques wireframes des interfaces graphiques que je pense créer pour le site web :
+Voici quelques wireframes des interfaces graphiques que je pense créer pour le site web .
+
