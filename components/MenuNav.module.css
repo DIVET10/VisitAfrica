@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem; /* Augmentation de l'espace entre les éléments */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,8 +18,10 @@
     font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease; 
+    font-size: 1.8rem; /* Augmentation de la taille du texte */
 }
 
 .nav a:hover {
-    color: #a27c30; 
+    color: #a27c30;
+    transform: scale(1.4); /* Augmente légèrement la taille au survol */
 }
