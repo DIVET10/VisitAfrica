@@ -7,8 +7,6 @@ export default function Accueil() {
            Bienvenue sur notre site des meilleurs sites touristiques en Afrique !
 
 
-           Bienvenue sur notre site des meilleurs sites touristiques en Afrique !
-
         </div>
     );
 }

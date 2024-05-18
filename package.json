@@ -9,18 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.1",
     "bootstrap": "^5.3.3",
     "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18"
-=======
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.2"
->>>>>>> 39c06d8c22657daa7d2fa41743a3a9987c3b701d
   },
   "devDependencies": {
     "eslint": "^8",
