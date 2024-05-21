@@ -38,7 +38,7 @@ export default function Accueil() {
     };
   }, []);
 
-page_Acceuil
+
   return (
     <div className={styles.container}>
       <div className="row">
@@ -111,8 +111,6 @@ page_Acceuil
             </button>
           </div>
 
-
- main
         </div>
       </div>
     
