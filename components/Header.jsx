@@ -26,7 +26,7 @@ export default function Header() {
                     <li className={styles.contact}><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <MenuNav />
+             {/* <MenuNav /> */}
         </header>
     );
 }
