@@ -5,8 +5,8 @@ export default function TypedEffect() {
   useEffect(() => {
     const options = {
       strings: [
-        'époustouflants', 'remarquables', 'inspirants', 'captivants',
-        'intrigants', 'majestueux', 'emblématiques', 'envoûtants'
+        'époustouflant', 'remarquable', 'inspirant', 'captivant',
+        'intrigant', 'majestueux', 'emblématique', 'envoûtant'
       ],
       typeSpeed: 100,
       backSpeed: 100,
