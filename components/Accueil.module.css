@@ -3,8 +3,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+ 
+  
   color: var(--first-color);
   font-size: var(--big-font-size);
+  color: black;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftColumn {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.rightColumn {
+  flex: 1;
+  padding-left: 2rem;
+}
+.aboutUs {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+

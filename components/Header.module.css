@@ -1,6 +1,13 @@
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
-    background-color: var(--first-color);
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 80px;
 }
 
 .title {
@@ -8,4 +15,47 @@
     align-items: center;
     gap: 1rem;
     color: #fff;
+}
+
+.nav {
+    flex: 1;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+.navList li {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.contact {
+    margin-left: auto;
+    border: 1.5px solid;
+    border-radius: 15px;
+    padding: 3px;
+    color: #1D2671; 
+    background-color:#1D2671;
+
+}
+
+.navList a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.v{
+    color: #C33764;
+}
+.Africa{
+font-size: 23px;
 }

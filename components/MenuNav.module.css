@@ -23,3 +23,19 @@
 .nav a:hover {
     color: #a27c30; 
 }
+.contact{
+    border-radius: 15px;
+    border: solid;
+    padding: 5px;
+    background-color: bisque;
+    color: black;
+    margin-right: -500px;
+    
+}
+.contact a{
+    padding-bottom: 50px;
+    color: black;
+}
+.nav{
+    margin-left: px;
+}
