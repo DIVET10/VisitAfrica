@@ -10,6 +10,7 @@
   color: black;
 }
 
+ page_Acceuil
 .container {
   display: flex;
   justify-content: space-between;
@@ -40,4 +41,14 @@
 }
 
 
+
+.welcome h1 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.welcome h1.visible {
+  opacity: 1;
+}
+ main
 

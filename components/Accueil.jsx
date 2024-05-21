@@ -38,6 +38,7 @@ export default function Accueil() {
     };
   }, []);
 
+page_Acceuil
   return (
     <div className={styles.container}>
       <div className="row">
@@ -109,6 +110,9 @@ export default function Accueil() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
+
+
+ main
         </div>
       </div>
     

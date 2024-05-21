@@ -1,6 +1,5 @@
 :root {
 
-
   --hue-color: 165;
   /* --hue-color: 165; */
   --first-color: hsl(var(--hue-color), 60%, 33%);
@@ -193,6 +192,10 @@ html {
 
 body {
 
+  background: var(--light);
+}
+
+
 
 
   background: var(--light);
@@ -215,7 +218,6 @@ a {
     color-scheme: dark;
   
   background: var(--light);
-}
 }
 }
 

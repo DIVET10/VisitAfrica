@@ -1,13 +1,87 @@
 .footer {
+page_Acceuil
     
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer h4 {
+    color: #fff;
+}
+
+.footer p {
+    color: #ccc;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer hr {
+    border-color: #666;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer .text-center {
+    text-align: center;
+}
+
+/* Ajouts pour les styles importés */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-unstyled>li {
+    padding: 5px 0;
+}
+
+.list-unstyled>li>a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.list-unstyled>li>a:hover {
+    color: #fff;
+    text-decoration: underline;
+
+    height: 5rem;
+    background-color: var(--first-color);
+ main
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     gap: 1rem; 
+
 }
 .footer {
  
