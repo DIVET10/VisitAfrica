@@ -5,8 +5,8 @@ export default function TypedEffect() {
   useEffect(() => {
     const options = {
       strings: [
-        'magique', 'de l’amour', 'surprenant', 'romantique',
-        'emouvant', 'de la confiance', 'du bonheur', 'amusant'
+        'époustouflants', 'remarquables', 'inspirants', 'captivants',
+        'intrigants', 'majestueux', 'emblématiques', 'envoûtants'
       ],
       typeSpeed: 100,
       backSpeed: 100,
@@ -16,7 +16,7 @@ export default function TypedEffect() {
       fadeOutDelay: 500,
       shuffle: true
     };
-    
+
     const typed = new Typed('.auto-typing', options);
 
     return () => {
