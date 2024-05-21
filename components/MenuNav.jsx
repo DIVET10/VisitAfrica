@@ -4,7 +4,7 @@ export default function MenuNav() {
     return (
         <nav className={styles.nav}>
             <ul>
-age_Acceuil
+
                 {/* <li><a href="#">Accueil</a></li>
                
                 <li><a href="#">Destinations populaires</a></li>
@@ -16,7 +16,6 @@ age_Acceuil
 
                 <li><a href="#">Destinations </a></li>
                 <li><a href="#">Contact</a></li>
-main
             </ul>
         </nav>
     );
