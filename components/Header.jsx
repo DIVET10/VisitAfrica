@@ -4,7 +4,7 @@ import Afrique from '@/public/Afrique.webp';
 
 import MenuNav from './MenuNav';
 
-export default function Header() {
+export default function Header({setPage}){
     return (
         <header className={styles.header}>
             <div className={styles.title}>
@@ -18,7 +18,7 @@ export default function Header() {
                     <span className={styles.v}>V</span>isit <span className={styles.Africa}>Africa</span>
                 </h1> 
             </div>
-            <MenuNav />
+            <MenuNav setPage={setPage} />
         </header>
     );
 }
