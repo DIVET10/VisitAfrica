@@ -1,10 +1,9 @@
 .welcome {
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
-  
   color: var(--first-color);
   font-size: var(--big-font-size);
   color: black;

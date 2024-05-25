@@ -1,25 +1,37 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between title and menu */
     align-items: center;
     padding: 1rem;
     background: #C33764;  
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
     background: linear-gradient(to right, #1D2671, #C33764); 
-    
     height: 80px;
-}
-
-.title {
+     position: fixed;  /*  Rendre le header fixe */
+    top: 0; /* Position en haut */
+    left: 0; /* Position à gauche */
+    width: 100%; /* Largeur complète */
+    z-index: 1000; /* Assurer que le header reste au-dessus des autres éléments */
+  }
+  
+  .title {
     display: flex;
     align-items: center;
     gap: 1rem;
     color: #fff;
-}
-
-.v{
+  }
+  
+  .v {
     color: #C33764;
-}
-.Africa{
-font-size: 23px;
-}
+  }
+  
+  .Africa {
+    font-size: 23px;
+  }
+  
+  .navContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+  }
+  

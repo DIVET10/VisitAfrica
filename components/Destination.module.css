@@ -1,61 +1,65 @@
-.destination-container {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .destination-container h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .destination-container img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .destination-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .destination-info div {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .destination-info h3 {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .destination-info p,
-  .destination-info ul {
-    color: #666;
-  }
-  
-  .destination-info a {
-    display: block;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  .destination-info a:hover {
-    background-color: #555;
-  }
-  
+.pageContainer {
+  background-color: #f4f4f4; /* Couleur de fond de la page */
+  padding: 20px; /* Ajouter un espace intérieur */
+  padding-top: 100px; /* Compense la hauteur du header fixe */
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
+
+.intro p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+.destinationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux images par ligne */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+.destinationItem {
+  position: relative;
+  width: 100%; /* Ajuster la largeur du conteneur à 100% */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Ajouter une transition pour le hover */
+}
+.destinationItem {
+  transition: transform 0.3s ease;
+}
+
+.destinationItem:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.destinationImage {
+  width: 100%; /* Largeur de l'image à 100% du conteneur */
+  height: 450px; /* Augmentation légère de la hauteur */
+  object-fit: cover; /* Ajuster la taille de l'image en conservant les proportions */
+  display: block;
+  border-radius: 10px; /* Ajouter une bordure arrondie à l'image */
+}
+
+.destinationText {
+  text-align: center;
+  padding: 10px; /* Ajouter du padding pour l'espacement intérieur */
+}
+
+.destinationText h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
