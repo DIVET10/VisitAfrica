@@ -5,7 +5,7 @@ import styles from "./Destination.module.css"; // Importez les styles à partir 
 import Image from "next/image";
 import image1 from "@/public/image1.webp";
 import image2 from "@/public/image2.webp";
-import image3 from "@/public/image3.webp";
+import image3 from "@/public/image8.webp";
 import image4 from "@/public/image4.webp";
 import image5 from "@/public/image5.webp";
 import image6 from "@/public/image6.webp";
