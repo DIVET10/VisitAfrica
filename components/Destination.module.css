@@ -1,7 +1,7 @@
 .pageContainer {
-  background-color: #f4f4f4; /* Couleur de fond de la page */
-  padding: 20px; /* Ajouter un espace intérieur */
-  padding-top: 100px; /* Compense la hauteur du header fixe */
+  background-color: #f4f4f4; 
+  padding: 20px; 
+  padding-top: 100px; 
 }
 
 .intro {
@@ -13,7 +13,7 @@
   font-size: 36px;
   color: #333;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 .intro p {
