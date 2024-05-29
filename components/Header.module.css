@@ -24,10 +24,12 @@
   .v {
     color: #C33764;
   }
+
+  .h1 {
+    font-size: 22px; /* Définissez la taille de police souhaitée */
+}
   
-  .Africa {
-    font-size: 23px;
-  }
+  
   
   .navContainer {
     flex: 1;

@@ -1,3 +1,5 @@
+/* destination.module.css */
+
 .pageContainer {
   background-color: #f4f4f4; 
   padding: 20px; 
@@ -27,39 +29,4 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Deux images par ligne */
   gap: 20px; /* Espacement entre les éléments */
-}
-
-.destinationItem {
-  position: relative;
-  width: 100%; /* Ajuster la largeur du conteneur à 100% */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out; /* Ajouter une transition pour le hover */
-}
-.destinationItem {
-  transition: transform 0.3s ease;
-}
-
-.destinationItem:hover {
-  transform: translateY(-3px) scale(1.05);
-}
-
-.destinationImage {
-  width: 100%; /* Largeur de l'image à 100% du conteneur */
-  height: 450px; /* Augmentation légère de la hauteur */
-  object-fit: cover; /* Ajuster la taille de l'image en conservant les proportions */
-  display: block;
-  border-radius: 10px; /* Ajouter une bordure arrondie à l'image */
-}
-
-.destinationText {
-  text-align: center;
-  padding: 10px; /* Ajouter du padding pour l'espacement intérieur */
-}
-
-.destinationText h2 {
-  font-size: 18px;
-  color: #333;
-  margin: 10px 0;
 }

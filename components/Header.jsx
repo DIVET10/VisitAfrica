@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import Image from 'next/image';
-import Afrique from '@/public/Afrique.webp';
+import Afrique from '@/public/logo3.webp';
 
 import MenuNav from './MenuNav';
 
@@ -14,9 +14,9 @@ export default function Header({ setPage }) {
           width={60}
           height={60}
         />
-        <h1>
-          <span className={styles.v}>V</span>isit <span className={styles.Africa}>Africa</span>
-        </h1>
+       <h1 className={styles.h1}>
+    <span className={styles.v}>V</span>isitAfrica 
+</h1>
       </div>
       <div className={styles.navContainer}>
         <MenuNav setPage={setPage} />
