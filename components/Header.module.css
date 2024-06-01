@@ -3,9 +3,9 @@
     justify-content: space-between; /* Space between title and menu */
     align-items: center;
     padding: 1rem;
-    background: #C33764;  
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
-    background: linear-gradient(to right, #1D2671, #C33764); 
+
+ background-color: var(--first-color);
+  
     height: 80px;
      position: fixed;  /*  Rendre le header fixe */
     top: 0; /* Position en haut */
@@ -21,12 +21,13 @@
     color: #fff;
   }
   
-  .v {
-    color: #C33764;
-  }
+ 
+  
 
   .h1 {
     font-size: 22px; /* Définissez la taille de police souhaitée */
+   color: black;
+   font-weight: bold;
 }
   
   

@@ -1,0 +1,15 @@
+.carouselContainer {
+    width: 800px; /* Définissez la largeur de la boîte */
+    height: 500px; /* Définissez la hauteur de la boîte */
+    margin: 0 auto; /* Centrez la boîte */
+    overflow: hidden; /* Cachez les débordements */
+    border: 1px solid #ccc; /* Optionnel : ajoutez une bordure pour la boîte */
+    border-radius: 8px; /* Optionnel : ajoutez un rayon de bordure */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste les images pour qu'elles remplissent la boîte */
+  }
+  
