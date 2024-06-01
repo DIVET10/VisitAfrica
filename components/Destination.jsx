@@ -2,13 +2,14 @@
 import React from "react";
 import styles from "./Destination.module.css";
 import DestinationItem from "./DestinationItems"
-import image1 from "@/public/image1.webp";
-import image2 from "@/public/image2.webp";
+import image1 from "@/public/mar.webp";
+import image2 from "@/public/zanzi.webp";
 import image3 from "@/public/image8.webp";
 import image4 from "@/public/image4.webp";
-import image5 from "@/public/image5.webp";
-import image6 from "@/public/image6.webp";
-import image7 from "@/public/image10.webp";
+import image5 from "@/public/foret.webp";
+import image6 from "@/public/yad.webp";
+import image7 from "@/public/soleil.webp";
+
 
 export default function Destination() {
   return (
@@ -45,16 +46,17 @@ export default function Destination() {
         <DestinationItem
           imageSrc={image5}
           altText="image5"
-          title="Une image du désert du Sahara"
-          description="Explorez les vastes étendues du désert du Sahara, où vous pouvez découvrir des paysages époustouflants, des dunes de sable sans fin et une tranquillité à couper le souffle."
+          title="Une image de la foret equatoriale "
+          description="Explorez les vastes étendues de la foret Equatoriale, où vous pouvez découvrir des paysages époustouflants, une tranquillité à couper le souffle."
         />
         <DestinationItem
           imageSrc={image6}
           altText="image6"
-          title="Une plage au large de Kribi au Cameroun"
-          description="Détendez-vous sur les plages de sable doré de Kribi au Cameroun, où vous pourrez vous baigner dans des eaux chaudes, profiter du soleil et explorer la beauté naturelle de la côte africaine."
+          title="Monument de la Reunification Yaounde"
+          description="isitez le monument historique du cameroun situer a yaounde en pleine capitale politique a moins de 1km du centre ville "
+         
         />
       </div>
     </div>
-  );
+  )
 }
