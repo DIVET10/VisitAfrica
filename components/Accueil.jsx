@@ -1,12 +1,11 @@
-"use client"; 
 
+'use client'
 import { useEffect } from 'react';
 import styles from './Accueil.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TypedEffect from './TypedEffect';
-import Carousel from './Carousel';
-import Button from './Button';
 import AboutUs from './AboutUs';
+import Carousel from './Carousel';
+import TypedEffect from './TypedEffect';
 
 export default function Accueil() {
   useEffect(() => {
@@ -18,21 +17,23 @@ export default function Accueil() {
       <div className="row"> 
         <div className={`col- ${styles.leftColumn}`}> 
           <h1 className={`py-3 text_baniere textt ${styles.spacing}`}> 
-          <h1></h1>Visiter l'Afrique c'est <TypedEffect />
-          
+            Visiter l'Afrique c'est <TypedEffect />
           </h1>
-          
-         
         </div>
-        <div className={`col-6 ${styles.rightColumn}`}>
-          
-        </div>
+        <div className={`col-6 ${styles.rightColumn}`}></div>
       </div>
       <h5 className="italic spacing-bottom">Alors, on vous aide ?</h5>
-      <br className={styles.space}/><Carousel />
+      <br className={styles.space}/>
+      <Carousel />
       <div className={`${styles.aboutUs} ${styles.newSection}`}>
         <h2>Une aventure inoubliable... </h2>
-        <p>Soyez assurer d'obtenir une bonne dose de paludisme apres votre visite</p>
+        <p>Soyez assuré d'obtenir une bonne dose de paludisme après votre visite</p>
+      </div>
+      <div className={styles.videoContainer}>
+        <video controls autoPlay loop className={styles.video}>
+          <source src="/video.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
       </div>
       <AboutUs />
     </div>

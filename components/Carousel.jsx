@@ -10,13 +10,12 @@ import five from '@/public/5.webp';
 import six from '@/public/6.webp';
 import seven from '@/public/7.webp';
 
-
 export default function Carousel() {
-  const images = [logo, peuple, logo, peuple, one , deux ,three, four , five , six , seven ]; // Liste des images à afficher
+  const images = [logo, peuple, one, deux, three, four, five, six, seven]; // Liste des images à afficher
 
   return (
     <div className={styles.carouselContainer}>
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000" data-bs-duration="400">
         <div className="carousel-inner">
           {images.map((image, index) => (
             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>

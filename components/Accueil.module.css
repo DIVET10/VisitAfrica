@@ -60,3 +60,8 @@
 .italic {
   margin-top: 500px;
 }
+.video {
+  width: 80vw; /* 75 % de la largeur de l'écran */
+  height: auto; /* Hauteur automatique pour conserver les proportions de la vidéo */
+}
+

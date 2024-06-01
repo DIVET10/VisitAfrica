@@ -53,7 +53,7 @@ export default function Destination() {
           imageSrc={image6}
           altText="image6"
           title="Monument de la Reunification Yaounde"
-          description="isitez le monument historique du cameroun situer a yaounde en pleine capitale politique a moins de 1km du centre ville "
+          description="Visitez le monument historique du cameroun situer a yaounde en pleine capitale politique a moins de 1km du centre ville "
          
         />
       </div>
