@@ -2,11 +2,11 @@
 
 .destinationItem {
     position: relative;
-    width: 100%; /* Ajuster la largeur du conteneur à 100% */
+    width: 100%; 
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; /* Ajouter une transition pour le hover */
+    transition: transform 0.3s ease-in-out; 
   }
   
   .destinationItem:hover {
@@ -14,16 +14,16 @@
   }
   
   .destinationImage {
-    width: 100%; /* Largeur de l'image à 100% du conteneur */
-    height: 450px; /* Augmentation légère de la hauteur */
-    object-fit: cover; /* Ajuster la taille de l'image en conservant les proportions */
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
     display: block;
-    border-radius: 10px; /* Ajouter une bordure arrondie à l'image */
+    border-radius: 10px; 
   }
   
   .destinationText {
     text-align: center;
-    padding: 10px; /* Ajouter du padding pour l'espacement intérieur */
+    padding: 10px; 
   }
   
   .destinationText h2 {

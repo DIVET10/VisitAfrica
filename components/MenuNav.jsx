@@ -12,9 +12,9 @@ export default function MenuNav({ setPage }) {
         <nav className={styles.nav}>
             {/* Menu hamburger */}
             <div className={styles.menuToggle} onClick={toggleMenu}>
-                <div className={styles.bar}></div>
-                <div className={styles.bar}></div>
-                <div className={styles.bar}></div>
+                <div className={menuOpen ? `${styles.bar} ${styles.open}` : styles.bar}></div>
+                <div className={menuOpen ? `${styles.bar} ${styles.open}` : styles.bar}></div>
+                <div className={menuOpen ? `${styles.bar} ${styles.open}` : styles.bar}></div>
             </div>
 
             {/* Menu principal */}
