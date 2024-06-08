@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import styles from './MenuNav.module.css';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function MenuNav() {
+    const pathname = usePathname();
     const [menuOpen, setMenuOpen] = useState(false);
    
     const toggleMenu = () => {
@@ -20,12 +22,26 @@ export default function MenuNav() {
 
             {/* Menu principal */}
             <ul className={`${styles.navList} ${menuOpen ? styles.active : ''}`}>
-              
-             <li><Link href="/">Accueil</Link></li>
-            <li><Link href="/attraction">Attraction</Link></li>
-            <li><Link href="/destination">Destination</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            
+                <li>
+                    <Link href="/" className={pathname === '/' ? styles.active : ''}>
+                        Accueil
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/attraction" className={pathname === '/attraction' ? styles.active : ''}>
+                        Attraction
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/destination" className={pathname === '/destination' ? styles.active : ''}>
+                        Destination
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/contact" className={pathname === '/contact' ? styles.active : ''}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
