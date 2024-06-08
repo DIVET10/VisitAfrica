@@ -1,4 +1,3 @@
-
 'use client'
 import { useEffect } from 'react';
 import styles from './Accueil.module.css';
@@ -9,7 +8,11 @@ import TypedEffect from './TypedEffect';
 
 export default function Accueil() {
   useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    const loadBootstrap = async () => {
+      await import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    };
+
+    loadBootstrap();
   }, []);
 
   return (

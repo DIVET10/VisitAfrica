@@ -1,159 +1,59 @@
 .footer {
-
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
     
-    background: #C33764;  /* fallback for old browsers */
-   
-    background-color: var(--first-color);
-    color: #fff;
-    padding: 50px 0;
-}
-
-.footer h4 {
-    color: #fff;
-}
-
-.footer p {
-    color: #ccc;
-}
-
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-.footer ul li a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.footer hr {
-    border-color: #666;
-}
-
-.footer .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.footer .text-center {
-    text-align: center;
-}
-
-/* Ajouts pour les styles importés */
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
-
-.list-unstyled>li {
-    padding: 5px 0;
-}
-
-.list-unstyled>li>a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-.list-unstyled>li>a:hover {
-    color: #fff;
-    text-decoration: underline;
-
-    height: 5rem;
-    background-color: var(--first-color);
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    gap: 1rem; 
+    flex-direction: column;
+    
+}
+ 
 
-}
-.footer {
- 
-    background-color: var(--first-color);
-    color: #fff;
-    padding: 50px 0;
-}
- 
-.footer h4 {
-    color: #fff;
-}
- 
-.footer p {
-    color: #ccc;
-}
- 
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-}
- 
-.footer ul li {
-    margin-bottom: 10px;
-}
- 
-.footer ul li a {
-    color: #ccc;
-    text-decoration: none;
-}
- 
-.footer ul li a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
- 
-.footer hr {
-    border-color: #666;
-}
- 
-.footer .container {
+
+.container {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding: 0 15px;
 }
  
-.footer .text-center {
-    text-align: center;
-}
- 
-/* Ajouts pour les styles importés */
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
- 
-.list-unstyled>li {
-    padding: 5px 0;
-}
- 
-.list-unstyled>li>a {
-    color: #ccc;
-    text-decoration: none;
-}
- 
-.list-unstyled>li>a:hover {
-    color: #fff;
-    text-decoration: underline;
- 
-    height: 5rem;
-    background-color: var(--first-color);
+.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
  
+.about, .column {
+    flex: 1;
+    margin: 15px;
+}
+ 
+.list {
+    list-style: none;
+    padding: 0;
+}
+ 
+.list li {
+    margin: 5px 0;
+}
+ 
+.list a {
+    text-decoration: none;
+    color: #fff;
+}
+ 
+.hr {
+    border: 1px solid #dee2e6;
+    margin: 20px 0;
+    width: 100%;
+}
+ 
+.copy {
+    text-align: center;
+    margin-top: 20px;
 }

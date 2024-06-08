@@ -17,6 +17,15 @@
     margin: 0 1rem;
 }
 
+.active {
+    position: relative;
+    background-color: rgb(184, 119, 21); 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    color: #fff; 
+}
+
+
 .navList a {
     color: #fff;
     text-decoration: none;
@@ -32,10 +41,8 @@
 }
 
 
-
-/* Styles pour le menu hamburger */
 .menuToggle {
-    display: none; /* Caché par défaut sur les écrans larges */
+    display: none; 
     cursor: pointer;
 }
 
@@ -46,15 +53,56 @@
     margin: 5px 0;
 }
 
+.open {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
 
+.open:nth-of-type(2) {
+    opacity: 0;
+}
 
-/* Média query pour les écrans de petite taille (par exemple, téléphone portable) */
+.open:last-of-type {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 @media (max-width: 768px) {
     .navList {
-        display: none; /* Caché par défaut sur les écrans de petite taille */
+        display: none;
+    }
+ 
+    .navList.active {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--first-color);
+        position: fixed;
+        top: 70px;
+        right: 0;
+        width: 250px;
+        padding: 20px;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navList.active {
+        transform: translateX(0);
+    }
+
+    .navList li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+
+    .navList li:last-child {
+        border-bottom: none;
     }
 
     .menuToggle {
-        display: block; /* Affiché sur les écrans de petite taille */
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
     }
 }

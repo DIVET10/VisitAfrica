@@ -77,3 +77,43 @@
     text-align: justify;
     padding: 0 10%;
 }
+
+
+
+.hiddenContent {
+    display: none; 
+}
+
+.showContent {
+    display: block; 
+}
+.showMore {
+    color: var(--first-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em; 
+        margin-bottom: 10px; 
+    }
+
+    .introduction {
+        font-size: 1.3em; 
+        margin-bottom: 10px; 
+        padding: 0 5%; 
+    }
+
+    .description {
+        font-size: 1em; 
+        margin-top: 10px; 
+    }
+    /* Ajout de styles pour le lien "En savoir plus" */
+.showMore {
+    color: var(--first-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+}

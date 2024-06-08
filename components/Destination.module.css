@@ -22,11 +22,17 @@
   font-size: 18px;
   color: #555;
   line-height: 1.6;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
 }
 
 .destinationGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Deux images par ligne */
-  gap: 20px; /* Espacement entre les éléments */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+}
+
+@media (max-width: 768px) {
+  .destinationGrid {
+    grid-template-columns: repeat(1, 1fr); 
+  }
 }
