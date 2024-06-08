@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import styles from './MenuNav.module.css';
+import Link from 'next/link';
 
-export default function MenuNav({ setPage }) {
+export default function MenuNav() {
     const [menuOpen, setMenuOpen] = useState(false);
-
+   
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -19,10 +20,12 @@ export default function MenuNav({ setPage }) {
 
             {/* Menu principal */}
             <ul className={`${styles.navList} ${menuOpen ? styles.active : ''}`}>
-                <li><a href="#" onClick={() => setPage('accueil')}>Accueil</a></li>
-                <li><a href="#" onClick={() => setPage('attraction')}>Attraction</a></li>
-                <li><a href="#" onClick={() => setPage('destination')}>Destination</a></li>
-                <li><a href="#" onClick={() => setPage('contact')}>Contact</a></li>
+              
+             <li><Link href="/">Accueil</Link></li>
+            <li><Link href="/attraction">Attraction</Link></li>
+            <li><Link href="/destination">Destination</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
+            
             </ul>
         </nav>
     );
