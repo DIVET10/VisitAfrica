@@ -1,10 +1,21 @@
-// Attraction.js
-import React from "react";
+import React, { useState } from "react";
 import Image from 'next/image';
 import styles from "./Attraction.module.css";
 import attractionsData from "./Attraction.json";
 
+
+
 export default function Attraction() {
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+    const handleClick = (index) => {
+        if (selectedImageIndex === index) {
+            setSelectedImageIndex(null); // Fermer le menu si c'est déjà ouvert
+        } else {
+            setSelectedImageIndex(index); // Ouvrir le menu pour l'image sélectionnée
+        }
+    };
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Les Trésors d'Afrique</h1>
@@ -24,7 +35,10 @@ export default function Attraction() {
                             <p className={styles.caption}>{attraction.alt}</p>
                         </div>
                     </div>
-                    <p className={styles.description}>{attraction.description}</p>
+                    <div className={styles.description}>
+                        {selectedImageIndex === index ? attraction.description : `${attraction.description.slice(0, 100)}...`}
+                        <span className={styles.showMore} onClick={() => handleClick(index)}>En savoir plus</span>
+                    </div>
                 </div>
             ))}
         </div>
