@@ -81,29 +81,33 @@
 
 
 .hiddenContent {
-    display: none; /* Contenu caché initialement */
+    display: none; 
 }
 
 .showContent {
-    display: block; /* Affichage du contenu lorsque la classe showContent est appliquée */
+    display: block; 
+}
+.showMore {
+    color: var(--first-color);
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* Media query pour les petits écrans */
 @media (max-width: 768px) {
     .title {
-        font-size: 2em; /* Taille de la police du titre réduite */
-        margin-bottom: 10px; /* Marge inférieure du titre réduite */
+        font-size: 2em; 
+        margin-bottom: 10px; 
     }
 
     .introduction {
-        font-size: 1.3em; /* Taille de la police de l'introduction réduite */
-        margin-bottom: 10px; /* Marge inférieure de l'introduction réduite */
-        padding: 0 5%; /* Padding de l'introduction réduit sur les côtés */
+        font-size: 1.3em; 
+        margin-bottom: 10px; 
+        padding: 0 5%; 
     }
 
     .description {
-        font-size: 1em; /* Taille de la police de la description réduite */
-        margin-top: 10px; /* Marge supérieure de la description réduite */
+        font-size: 1em; 
+        margin-top: 10px; 
     }
     /* Ajout de styles pour le lien "En savoir plus" */
 .showMore {
