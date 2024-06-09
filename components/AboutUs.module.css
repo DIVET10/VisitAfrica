@@ -1,6 +1,5 @@
 .newSection {
   margin-top: 20px;
- 
 }
 
 .logoContainer {
@@ -41,15 +40,6 @@
   margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-}
-
-.imageContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
-  display: block;
 }
 
 .card-text {
@@ -86,3 +76,4 @@
     text-align: center;
   }
 }
+
