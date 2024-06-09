@@ -4,6 +4,8 @@
     min-height: 100vh;
     padding-top: 100px;
     background-color: rgb(245, 245, 245);
-    margin: 0 auto; /* Centre le contenu horizontalement */
-    max-width: 1400px; /* Limite la largeur à 1200 pixels */
+    
+    margin: 0 auto; 
+    max-width: 1400px; 
+    
 }

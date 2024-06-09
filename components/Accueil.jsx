@@ -28,6 +28,7 @@ export default function Accueil() {
       <h5 className="italic spacing-bottom">Alors, on vous aide ?</h5>
       <br className={styles.space}/>
       <Carousel />
+      
       <div className={`${styles.aboutUs} ${styles.newSection}`}>
         <h2>Une aventure inoubliable... </h2>
         <p>Soyez assuré d'obtenir une bonne dose de paludisme après votre visite</p>
@@ -36,7 +37,7 @@ export default function Accueil() {
         <video controls autoPlay loop className={styles.video}>
           <source src="/video.mp4" type="video/mp4" />
           Votre navigateur ne prend pas en charge la lecture de vidéos.
-        </video>
+        </video>  
       </div>
       <AboutUs />
     </div>
