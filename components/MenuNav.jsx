@@ -42,6 +42,11 @@ export default function MenuNav() {
                         Contact
                     </Link>
                 </li>
+                <li>
+                    <Link href="/connexion" className={pathname === '/connexion' ? styles.active : ''}>
+                        Connexion
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
