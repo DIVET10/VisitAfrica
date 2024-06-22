@@ -16,6 +16,25 @@
 .navList li {
     margin: 0 1rem;
 }
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.toggleLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.toggleInput {
+    display: none;
+}
+
+.toggleLabel input:checked + svg {
+    color: #FFD700; /* For example, change the icon color when checked */
+}
 
 .active {
     position: relative;

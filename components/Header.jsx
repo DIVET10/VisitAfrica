@@ -5,11 +5,15 @@ import Image from 'next/image';
 import Afrique from '@/public/logo3.webp';
 import { useRouter } from 'next/router'; // Importer useRouter depuis next/router
 import MenuNav from './MenuNav';
+import { useTheme } from './ThemeProvider';
 
 export default function Header() {
-  
+
+  const [theme, setTheme] = useTheme();
   return (
-    <header className={styles.header}>
+<header className={styles.header +' '+
+        (theme === 'light'? styles.light : styles.dark)
+        }>
       <div className={styles.title}>
       <a href="/">
           <Image
