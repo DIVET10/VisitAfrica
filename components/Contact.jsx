@@ -1,116 +1,132 @@
 'use client'
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { useForm } from 'react-hook-form';
 import styles from './Contact.module.css';
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState({});
+  const [result, setResult] = useState('');
+  const [success, setSuccess] = useState(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Validation
-    if (!name.trim()) {
-      setErrors(prevErrors => ({ ...prevErrors, name: 'Le nom est requis' }));
-      return;
-    }
-    if (!email.trim()) {
-      setErrors(prevErrors => ({ ...prevErrors, email: 'L\'email est requis' }));
-      return;
-    }
-    if (!message.trim()) {
-      setErrors(prevErrors => ({ ...prevErrors, message: 'Le message est requis' }));
-      return;
-    }
-
-    // Envoi de l'e-mail via EmailJS avec les scopes nécessaires
-    emailjs.send('service_q1btomi', 'template_d8hggxb', {
-      from_name: name,
-      from_email: email,
-      message: message
-    }, {
-      user_id: 'vC8OVZ_k6bvBQQFX7', // Remplacez par votre identifiant utilisateur EmailJS
-      gmail: {
-        scopes: 'https://www.googleapis.com/auth/gmail.send'
+  const {
+      register, handleSubmit, getValues,
+      formState: { errors }
+  } = useForm({
+      defaultValues: {
+          nom: '',
+          email: '',
+          objet: '',
+          message: ''
       }
-    })
-      .then((result) => {
-        console.log('Email envoyé avec succès:', result.text);
+  });
 
-        // Envoi de la réponse automatique
-        emailjs.send('service_q1btomi', 'template_d33nOIh', {
-          to_name: name,
-          to_email: email,
-          message: message
-        }, 'vC8OVZ_k6bvBQQFX7') // Remplacez par votre identifiant utilisateur EmailJS
-          .then((response) => {
-            console.log('Réponse automatique envoyée avec succès:', response.text);
-          })
-          .catch((error) => {
-            console.error('Erreur lors de l\'envoi de la réponse automatique:', error.text);
-          });
+  const sendmail = () =>{
+      const values = getValues();
 
-        // Réinitialisation du formulaire et de l'état local
-        setSubmitted(true);
-        setName('');
-        setEmail('');
-        setMessage('');
-        setErrors({});
-      })
-      .catch((error) => {
-        console.error('Erreur lors de l\'envoi de l\'e-mail:', error.text);
-        setErrors({ submit: 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer plus tard.' });
-      });
-  };
+      const templateParams = {
+          name: values.nom,
+          subject: values.objet,
+          email: values.email,
+          message: values.message,
+      }
+
+      emailjs.send(
+          'service_s6ypzf5', // Service_ID
+          'template_d8hggxb', // Template_ID
+          templateParams,
+          'Jo5lnfNzZRjFQozdB' // USER PUBLIC KEY
+      ).then(
+          (response) =>{
+              setResult("message envoye avec succes");
+              setSuccess(true);
+          },
+          (error) =>{
+              setResult("message non envoye");
+              setSuccess(false)
+          }
+      )
+  }
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Contactez-nous</h1>
-      {submitted ? (
-        <p>Votre message a été envoyé avec succès.</p>
-      ) : (
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <label htmlFor="name" className={styles.label}>Nom:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className={`${styles.input} ${errors.name && styles.error}`}
-          />
-          {errors.name && <p className={styles.errorText}>{errors.name}</p>}
-          <br />
+      <h2 className={styles.title}>Contactez-nous</h2>
+      <form className={styles.form} onSubmit={handleSubmit(sendmail)}>
+          <div>
+              <label className={styles.label}>
+                  Nom :
+                  <input
+                      type="text"
+                      placeholder='votre nom'
+                      className={styles.input}
+                      {...register("nom",
+                          {
+                              required: 'Ce champ est obligatoire',
+                          }
+                      )}
+                  />
+              </label>
+              <div className={styles.erreur}>{errors.nom?.message}</div>
+          </div>
 
-          <label htmlFor="email" className={styles.label}>Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={`${styles.input} ${errors.email && styles.error}`}
-          />
-          {errors.email && <p className={styles.errorText}>{errors.email}</p>}
-          <br />
+          <div>
+              <label className={styles.label}>
+                  Email:
+                  <input
+                      type="text"
+                      placeholder='votre email'
+                      className={styles.input}
+                      {...register("email",
+                          {
+                              required: 'Ce champ est obligatoire',
+                              pattern: {
+                                  value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                                  message: 'Email invalide'
+                              }
+                          }
+                      )}
+                  />
+              </label>
+              <div className={styles.erreur}>{errors.email?.message}</div>
+          </div>
 
-          <label htmlFor="message" className={styles.label}>Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className={`${styles.textarea} ${errors.message && styles.error}`}
-          />
-          {errors.message && <p className={styles.errorText}>{errors.message}</p>}
-          <br />
+          <div>
+              <label className={styles.label}>
+                  Objet :
+                  <input
+                      type="text"
+                      placeholder='objet du message'
+                      className={styles.input}
+                      {...register("objet",
+                          {
+                              required: 'Ce champ est obligatoire',
+                          }
+                      )}
+                  />
+              </label>
+              <div className={styles.erreur}>{errors.objet?.message}</div>
+          </div>
 
-          {errors.submit && <p className={styles.errorText}>{errors.submit}</p>}
+          <div>
+              <label className={styles.label}>
+                  Message :
+                  <textarea
+                      cols={20}
+                      rows={10}
+                      placeholder='votre message'
+                      className={styles.textarea}
+                      {...register("message",
+                          {
+                              required: 'Ce champ est obligatoire',
+                          }
+                      )}
+                  />
+              </label>
+              <div className={styles.erreur}>{errors.message?.message}</div>
+          </div>
 
-          <button type="submit" className={styles.button}>Envoyer</button>
-        </form>
-      )}
+          <button type='submit' className={styles.button}>Envoyer</button>
+          <div className={success ? styles.result_OK : styles.result_NOT_OK}>{result}</div>
+      </form>
     </div>
   );
 }
