@@ -1,4 +1,3 @@
-'use client';
 
 import React from 'react';
 import Header from '@/components/Header';
@@ -10,6 +9,7 @@ import { Inter } from 'next/font/google';
 import LoadingBar from '@/components/LoadingBar';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LocaleProvider } from '@/components/LocaleProvider';
+
 
 
 const inter = Inter({ subsets: ['latin'] });

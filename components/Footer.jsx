@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
- 
+
 export default function Footer() {
     return (
         <footer className={styles.footer}>
@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className={styles.row}>
                     <div className={styles.about}>
                         <h4>À propos de nous</h4>
-                        <p>Découvrez les merveilles de l'Afrique avec notre site touristique</p>
+                        <p>Découvrez les merveilles de l&apos;Afrique avec notre site touristique</p>
                     </div>
                     <div className={styles.column}>
                         <h4>Nos Destinations</h4>
@@ -21,7 +21,7 @@ export default function Footer() {
                     </div>
                     <div className={styles.column}>
                         <h4>Contactez-nous</h4>
-                        <p>Pour toute question ou assistance, n'hésitez pas à nous contacter :</p>
+                        <p>Pour toute question ou assistance, n&apos;hésitez pas à nous contacter :</p>
                         <ul className={styles.list}>
                             <li><a href="mailto:visitafrica@africa.com">Email: visitafrica@africa.com</a></li>
                             <li><a href="tel:+123456789">Téléphone: +123456789</a></li>

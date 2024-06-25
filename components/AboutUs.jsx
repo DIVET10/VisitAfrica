@@ -17,7 +17,7 @@ export default function AboutUs() {
         <div className={styles.textContainer}>
           <h3 className="text-center">Qui sommes nous ?</h3>
           <br />
-          <p>Nous sommes une entreprise passionnée par l'Afrique et ses merveilles. Notre mission est de vous faire découvrir la beauté et la diversité de ce continent fascinant.</p>
+          <p>Nous sommes une entreprise passionnée par l&apos;Afrique et ses merveilles. Notre mission est de vous faire découvrir la beauté et la diversité de ce continent fascinant.</p>
           <p>Que vous souhaitiez partir en safari, vous détendre sur des plages paradisiaques ou explorer des cultures riches et variées, nous sommes là pour vous aider à vivre une expérience inoubliable.</p>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function AboutUs() {
         <TestimonialCard
           image={pic2}
           alt="Photo"
-          text={<span style={{ fontStyle: 'italic' }}>« Mes vacances sur les plages africaines étaient tout simplement paradisiaques. Le sable fin et les eaux cristallines offraient un cadre parfait pour la détente. Chaque moment passé au bord de l'océan était un véritable moment de bonheur. »</span>}
+          text={<span style={{ fontStyle: 'italic' }}>« Mes vacances sur les plages africaines étaient tout simplement paradisiaques. Le sable fin et les eaux cristallines offraient un cadre parfait pour la détente. Chaque moment passé au bord de l&apos;océan était un véritable moment de bonheur. »</span>}
         />
       </div>
       <br />
@@ -43,12 +43,12 @@ export default function AboutUs() {
         <TestimonialCard
           image={pic3}
           alt="Photo"
-          text={<span style={{ fontStyle: 'italic' }}>« Découvrir les cultures locales en Afrique a été une expérience inoubliable. J'ai plongé dans l'histoire et les traditions locales à travers des rencontres authentiques. Ces moments m'ont ouvert l'esprit sur la richesse de la diversité culturelle africaine. »</span>}
+          text={<span style={{ fontStyle: 'italic' }}>« Découvrir les cultures locales en Afrique a été une expérience inoubliable. J&apos;ai plongé dans l&apos;histoire et les traditions locales à travers des rencontres authentiques. Ces moments m&apos;ont ouvert l&apos;esprit sur la richesse de la diversité culturelle africaine. »</span>}
         />
         <TestimonialCard
           image={pic4}
           alt="Photo"
-          text={<span style={{ fontStyle: 'italic' }}>« Explorer les trésors cachés de l'Afrique a été une aventure incroyable. Parcourir des sites historiques, admirer des paysages spectaculaires et plonger dans une nature luxuriante étaient des expériences uniques. Chaque moment passé en Afrique restera gravé dans ma mémoire pour toujours. »</span>}
+          text={<span style={{ fontStyle: 'italic' }}>« Explorer les trésors cachés de l&apos;Afrique a été une aventure incroyable. Parcourir des sites historiques, admirer des paysages spectaculaires et plonger dans une nature luxuriante étaient des expériences uniques. Chaque moment passé en Afrique restera gravé dans ma mémoire pour toujours. »</span>}
         />
       </div>
       <Gallery />

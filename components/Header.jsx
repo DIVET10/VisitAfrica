@@ -1,5 +1,5 @@
 // Header.jsx
-
+'use client'
 import styles from './Header.module.css';
 import Image from 'next/image';
 import Afrique from '@/public/logo3.webp';

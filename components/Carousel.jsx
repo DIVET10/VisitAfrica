@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import logo from '@/public/bousole.webp';
-import peuple from '@/public/peuple.webp';
 import styles from './Carousel.module.css';
 import one from '@/public/1.webp';
 import deux from '@/public/2.webp';
@@ -11,7 +10,7 @@ import six from '@/public/6.webp';
 import seven from '@/public/7.webp';
 
 export default function Carousel() {
-  const images = [logo, peuple, one, deux, three, four, five, six, seven]; // Liste des images à afficher
+  const images = [logo, one, deux, three, four, five, six, seven]; // Liste des images à afficher
 
   return (
     <div className={styles.carouselContainer}>

@@ -20,7 +20,7 @@ export default function Accueil() {
       <div className="row"> 
         <div className={`col- ${styles.leftColumn}`}> 
           <h1 className={`py-3 text_baniere textt ${styles.spacing}`}> 
-            Visiter l'Afrique c'est <TypedEffect />
+            Visiter l&apos;Afrique c&apos;est <TypedEffect />
           </h1>
         </div>
         <div className={`col-6 ${styles.rightColumn}`}></div>
@@ -31,7 +31,7 @@ export default function Accueil() {
       
       <div className={`${styles.aboutUs} ${styles.newSection}`}>
         <h2>Une aventure inoubliable... </h2>
-        <p>Soyez assuré d'obtenir une bonne dose de paludisme après votre visite</p>
+        <p>Soyez assuré d&apos;obtenir une bonne dose de paludisme après votre visite</p>
       </div>
       <div className={styles.videoContainer}>
         <video controls autoPlay loop className={styles.video}>
