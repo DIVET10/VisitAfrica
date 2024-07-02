@@ -2,7 +2,7 @@ import Contact from "@/components/Contact"
 
 export const metadata = {
     title: 'Contact | VisitAfrica',
-    description: 'Contact | VisitAfrica',
+    description: 'formulaire de conatct pour obtenir des informations',
     openGraph: {
         title: 'Contact | VisitAfrica',
         description: 'Page Contact ',
