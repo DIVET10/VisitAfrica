@@ -2,7 +2,7 @@
 'use client'
 import styles from './Header.module.css';
 import Image from 'next/image';
-import Afrique from '@/public/logo3.webp';
+import Afrique from '@/public/logo4.webp';
 import { useRouter } from 'next/router'; // Importer useRouter depuis next/router
 import MenuNav from './MenuNav';
 import { useTheme } from './ThemeProvider';
@@ -20,7 +20,7 @@ export default function Header() {
             src={Afrique}
             alt="logo de Notre page Web"
             width={60}
-            height={60}
+            height={57}
           />
         </a>
         <h1 className={styles.h1}>
