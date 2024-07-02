@@ -4,7 +4,7 @@ import styles from './MenuNav.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from './ThemeProvider';
-import { useLocale } from './LocaleProvider';
+import { useLocale } from './localeProvider';
 import { FormattedMessage } from 'react-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon, faLanguage } from '@fortawesome/free-solid-svg-icons';

@@ -8,9 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Inter } from 'next/font/google';
 import LoadingBar from '@/components/LoadingBar';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import { LocaleProvider } from '@/components/LocaleProvider';
-
-
+import { LocaleProvider } from '@/components/localeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
